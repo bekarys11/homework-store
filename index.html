@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?&family=Karla:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Store</title>
+	</head>
+	<body>
+		<header>
+			<div class="banner">
+				<p class="logo">hw <span>en.store</span></p>
+				<button class="hamburger" onclick="dropMenu()">
+					<div class="menu-icon">
+						<span class="line-1"></span>
+						<span class="line-2"></span>
+						<span class="line-3"></span>
+					</div>
+				</button>
+				<nav class="navMenu">
+					<a href="#">Экзамен</a>
+					<a href="#">Домашка</a>
+					<a href="#">Тест</a>
+					<a href="#">Купить книги</a>
+					<a href="#">Подписка на месяц</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<h1>
+					Профи учителя сделают твой тест, домашку, экзамен быстро и качественно
+				</h1>
+				<a href="#">Получи услугу с 290 тг.</a>
+			</section>
+
+			<section class="how-order">
+				<p class="subheading">Как Заказать</p>
+				<div class="social-container">
+					<img
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Fthumbnail%2Fpurepng.com-circled-whatsapp-logologosiconsflat-designcircled-logoscircled-iconsiconflatminimalistlogo-design-311519937091r8rks.png&f=1&nofb=1"
+						alt="social"
+						width="120"
+						height="120"
+					/>
+					<p class="social-media">Whatsapp</p>
+					<p class="social-description">
+						Напиши на ватсап, мы определим цену и время
+					</p>
+				</div>
+
+				<div class="social-container">
+					<img
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Fthumbnail%2Fpurepng.com-circled-telegram-logologosiconsflat-designcircled-logoscircled-iconsiconflatminimalistlogo-design-311519936355tatro.png&f=1&nofb=1"
+						alt="social"
+						width="120"
+						height="120"
+					/>
+					<p class="social-media">Telegram</p>
+					<p class="social-description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi at
+						asperiores.
+					</p>
+				</div>
+
+				<div class="social-container">
+					<img
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbotw-pd.s3.amazonaws.com%2Fstyles%2Flogo-thumbnail%2Fs3%2F022012%2Fvk_0.png%3Fitok%3DPZrsRaAC&f=1&nofb=1"
+						alt="social"
+						width="120"
+						height="120"
+					/>
+					<p class="social-media">Вконтакте</p>
+					<p class="social-description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi at
+						asperiores.
+					</p>
+				</div>
+			</section>
+
+			<section class="kits">
+				<p class="subheading">Подписки</p>
+				<div class="kit-container">
+					<img src="./img/monitor.png" alt="monitor" />
+					<img src="./img/Book.png" alt="book" data-aos="fade-left" />
+					<img
+						src="./img/Things.png"
+						alt="things"
+						data-aos="fade-right"
+						data-aos-anchor=".kit-container"
+					/>
+					<div class="kit-description">
+						<h3>Подписка</h3>
+						<p>Делаем твою домашку целый месяц</p>
+						<button class="btn">Начиная с 2200 тг.</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p class="logo">hw <span>en.store</span></p>
+			<p>
+				Помощь по домашнему заданию. Сдать экзамены по английскому. Заказать
+				учителя для теста.
+			</p>
+			<p>2020-2021 © hw en.store</p>
+		</footer>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1200,
+				delay: 300,
+			});
+			function dropMenu() {
+				document.querySelector(".navMenu").classList.toggle("show");
+			}
+		</script>
+	</body>
+</html>

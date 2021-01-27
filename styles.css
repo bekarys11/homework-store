@@ -1,0 +1,312 @@
+html,
+*,
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h3 {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 0.8rem;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.subheading {
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+/* ----HEADER---- */
+
+.banner {
+	position: relative;
+	padding: 1rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+	background: #fff;
+}
+
+.navMenu {
+	padding: 1.8rem 0;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	line-height: 3rem;
+	position: absolute;
+	transform: translateY(-400px);
+	transition: transform 0.4s ease-in;
+	background: #ffffff;
+	font-weight: 500;
+	z-index: 200;
+}
+
+@media (min-width: 990px) {
+	.navMenu {
+		padding: 0;
+		position: static;
+		transform: initial;
+		grid-template-columns: repeat(7, 1fr);
+	}
+
+	.navMenu a:first-child {
+		grid-column: 3/4;
+	}
+}
+
+.show {
+	transform: translateY(0px);
+}
+
+.navMenu a {
+	text-align: center;
+	color: rgb(97, 97, 97);
+}
+
+.logo {
+	font-family: "Karla";
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+@media (min-width: 768px) {
+	.logo {
+		width: 15vw;
+		align-self: center;
+	}
+}
+
+.logo span {
+	font-weight: 300;
+}
+
+/* HAMBURGER */
+.hamburger {
+	width: 25px;
+	display: inline-block;
+	align-items: center;
+	border: none;
+	background-color: transparent;
+	z-index: 300;
+}
+
+@media (min-width: 990px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+.hamburger:active,
+.hamburger:focus {
+	outline: none;
+}
+
+.menu-icon {
+	display: grid;
+	place-items: center;
+	height: 20px;
+	width: 10px;
+	cursor: pointer;
+}
+
+.menu-icon > span {
+	width: 20px;
+	height: 3px;
+	background: #000;
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+
+.line-1 {
+	width: 42px;
+	justify-self: end;
+}
+
+.line-2 {
+	width: 35px;
+	justify-self: end;
+}
+
+/* ---HERO--- */
+.hero {
+	position: relative;
+	font-size: 1.2rem;
+	margin: 0.5rem;
+	margin-bottom: 2rem;
+	padding: 3rem 2rem;
+	line-height: 2.5rem;
+}
+
+@media (min-width: 780px) {
+	.hero {
+		min-height: 40rem;
+		padding-top: 8rem;
+	}
+}
+
+.hero::before {
+	content: "";
+	background-image: url("./img/bg-2.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.4;
+	border-radius: 15px;
+}
+
+.hero h1 {
+	position: relative;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+@media (min-width: 990px) {
+	.hero h1 {
+		font-size: 5rem;
+		line-height: 8.5rem;
+	}
+}
+
+@media (min-width: 800px) {
+	.hero h1 {
+		font-size: 3rem;
+		line-height: 4.5rem;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.hero a {
+	position: relative;
+	font-size: 0.9rem;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+/* ---HOW TO ORDER SECTION---  */
+
+.how-order {
+	padding: 1rem 0.5rem;
+}
+
+.social-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social-container img {
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+}
+
+.social-media {
+	text-align: center;
+	font-size: 0.8rem;
+	opacity: 0.8;
+	color: rgb(97, 97, 97);
+	margin-bottom: 0.3rem;
+}
+
+.social-description {
+	text-align: center;
+	margin-bottom: 2.5rem;
+	color: rgb(97, 97, 97);
+}
+
+/* ---KITS--- */
+.kit-container {
+	background: #b5d4e2;
+	margin: 0.5rem;
+	margin-bottom: 1.5rem;
+	border-radius: 15px;
+	position: relative;
+}
+
+.kit-container img:nth-child(2) {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.kit-container img:nth-child(3) {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.kit-container img {
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.kit-description {
+	padding: 1rem;
+	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.kit-description p {
+	margin-bottom: 1.5rem;
+	color: #fff;
+	opacity: 0.6;
+}
+
+.btn {
+	padding: 0.8rem 1.4rem;
+	border-radius: 20px;
+	border: 0;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	background: rgba(220, 220, 220, 0.3);
+}
+
+/* ---FOOTER--- */
+
+footer {
+	padding: 2rem 0.5rem;
+	padding-bottom: 0;
+}
+
+footer p {
+	padding-bottom: 1rem;
+}
+
+footer p:nth-child(2) {
+	color: rgb(97, 97, 97);
+	max-width: 280px;
+	padding-left: 1rem;
+}
+
+footer p:last-child {
+	font-size: 0.8rem;
+	color: rgb(97, 97, 97);
+	max-width: 280px;
+	padding-left: 1rem;
+}
