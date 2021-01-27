@@ -6,6 +6,7 @@
 ## General info
 
 This project is an online store for books and service of teachers.
+It's live on https://hw-store.netlify.app
 
 ## Technologies
 
